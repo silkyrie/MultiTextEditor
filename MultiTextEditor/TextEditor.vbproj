@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E8CE48D-A529-4B4F-9994-988D13204F5D}</ProjectGuid>
+    <ProjectGuid>{914395D9-7A11-4E5A-8BD8-D579D7AC0F36}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MultiTextEditor.My.MyApplication</StartupObject>
-    <RootNamespace>MultiTextEditor</RootNamespace>
-    <AssemblyName>MultiTextEditor</AssemblyName>
+    <StartupObject>textEditor.My.MyApplication</StartupObject>
+    <RootNamespace>textEditor</RootNamespace>
+    <AssemblyName>textEditor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>MultiTextEditor.xml</DocumentationFile>
+    <DocumentationFile>textEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>MultiTextEditor.xml</DocumentationFile>
+    <DocumentationFile>textEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,29 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="averageunitsShipped.Designer.vb">
-      <DependentUpon>averageunitsShipped.vb</DependentUpon>
-    </Compile>
-    <Compile Include="averageunitsShipped.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCarinventory.Designer.vb">
-      <DependentUpon>frmCarinventory.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmCarinventory.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmParent.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmParent.Designer.vb">
-      <DependentUpon>frmParent.vb</DependentUpon>
+    <Compile Include="TextEditor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TextEditor.Designer.vb">
       <DependentUpon>TextEditor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TextEditor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,20 +97,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmCarInventory.resx">
-      <DependentUpon>frmCarinventory.vb</DependentUpon>
+    <EmbeddedResource Include="TextEditor.resx">
+      <DependentUpon>TextEditor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmParent.resx">
-      <DependentUpon>frmParent.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="textEditor.resx">
-      <DependentUpon>TextEditor.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
